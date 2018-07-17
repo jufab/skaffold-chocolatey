@@ -12,18 +12,10 @@ $checksum,$filename = $checksumContent.split(' ')
 $checksumtype = "sha256"
 $destination = "$toolsPath\skaffold-windows-amd64.exe"
 
-
 if (Test-Path "$toolsPath\skaffold.exe") {
   Remove-Item "$toolsPath\skaffold.exe"
   Remove-Item "$toolsPath\*.sha256"
   Uninstall-BinFile -Name "skaffold" -Path "$toolsPath"
-}
-
-$packageArgs = @{
-  packageName    = $packageName
-  url            = $url
-  checksum       = $checksum
-  checksumtype   = $checksumtype
 }
 
 Get-ChocolateyWebFile -PackageName $packageName -FileFullPath $destination -Url64bit $url -Checksum64 $checksum -ChecksumType64 $checksumtype
