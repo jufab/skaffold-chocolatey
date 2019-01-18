@@ -1,4 +1,5 @@
-﻿write-host "Attempting to stop any running skaffold processes, to allow upgrade"
+$ErrorActionPreference = "Stop"
+write-host "Attempting to stop any running skaffold processes, to allow upgrade"
 try
 {
   $running = get-process skaffold
