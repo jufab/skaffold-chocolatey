@@ -17,7 +17,7 @@
     <licenseUrl>https://github.com/GoogleContainerTools/skaffold/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<projectSourceUrl>https://github.com/GoogleContainerTools/skaffold</projectSourceUrl>-->
-    <docsUrl>https://github.com/GoogleContainerTools/skaffold/blob/master/README.adoc</docsUrl>
+    <docsUrl>https://github.com/GoogleContainerTools/skaffold/blob/master/README.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/GoogleContainerTools/skaffold/issues</bugTrackerUrl>
     <tags>skaffold kubernetes docker</tags>
