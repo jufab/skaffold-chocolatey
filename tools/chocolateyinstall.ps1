@@ -3,8 +3,8 @@
 $packageName = 'skaffold'
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $version = $env:ChocolateyPackageVersion
-$url = "https://github.com/GoogleContainerTools/skaffold/releases/download/v$version/skaffold-windows-amd64.exe"
-$urlSHA = "https://github.com/GoogleContainerTools/skaffold/releases/download/v$version/skaffold-windows-amd64.exe.sha256"
+$url = "https://github.com/GoogleContainerTools/skaffold/releases/download/$version/skaffold-windows-amd64.exe"
+$urlSHA = "https://github.com/GoogleContainerTools/skaffold/releases/download/$version/skaffold-windows-amd64.exe.sha256"
 $fileSHA = "$toolsPath\skaffold.sha256"
 Get-WebFile -Url $urlSHA -FileName $fileSHA
 $checksumContent = Get-Content -Path $fileSHA 
