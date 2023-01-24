@@ -13,7 +13,7 @@
     <authors>David Gageot</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/GoogleContainerTools/skaffold</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/GoogleContainerTools/skaffold/e6f37af6/docs/img/skaffold.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/GoogleContainerTools/skaffold/e6f37af6/docs/img/skaffold.png</iconUrl>
     <licenseUrl>https://github.com/GoogleContainerTools/skaffold/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<projectSourceUrl>https://github.com/GoogleContainerTools/skaffold</projectSourceUrl>-->

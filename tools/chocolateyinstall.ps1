@@ -1,14 +1,9 @@
-﻿$ErrorActionPreference = 'Stop';
-
+﻿$checksum = "af91f54bdb9e390122a8078fde11e24aabe9ec1b9f2855f05423e1ac73dbb339"
+$ErrorActionPreference = 'Stop';
 $packageName = 'skaffold'
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $version = $env:ChocolateyPackageVersion
 $url = "https://github.com/GoogleContainerTools/skaffold/releases/download/v$version/skaffold-windows-amd64.exe"
-$urlSHA = "https://github.com/GoogleContainerTools/skaffold/releases/download/v$version/skaffold-windows-amd64.exe.sha256"
-$fileSHA = "$toolsPath\skaffold.sha256"
-Get-WebFile -Url $urlSHA -FileName $fileSHA
-$checksumContent = Get-Content -Path $fileSHA 
-$checksum,$filename = $checksumContent.split(' ')
 $checksumtype = "sha256"
 $destination = "$toolsPath\skaffold-windows-amd64.exe"
 
