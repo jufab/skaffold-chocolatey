@@ -1,4 +1,4 @@
-﻿$checksum = "bfb875fbdf9a7c963024297ffd0d6ca5503c387c092516ec3ac94bb781d41a20"
+﻿$checksum = "9b99410dbf3517fb18fdb7476bf49e8d91582fe15286f0ac996b04563fe26ae5"
 $ErrorActionPreference = 'Stop';
 $packageName = 'skaffold'
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
